@@ -10,7 +10,7 @@ const Testimonials = () => {
         {testimonials.map((testimonial, index) => (
           <div key={index} className="w-full sm:w-1/2 lg:w-1/3 px-4 py-2">
             <div className="bg-gray-100 rounded-md p-6 text-md border border-gray-300 font-thin shadow-md">
-              <p className="text-neutral-900">{testimonial.text}</p>
+              <p className="font-normal text-neutral-900">{testimonial.text}</p>
               <div className="flex mt-8 items-start">
                 <img
                   className="w-12 h-12 mr-6 rounded-full border border-gray-300"
