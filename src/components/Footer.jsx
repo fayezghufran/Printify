@@ -51,7 +51,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="bg-gray-100 py-4 text-center mt-8 text-gray-700 border-t border-gray-200">
-        © 2024 Your Company Name. All Rights Reserved.
+        © 2024 Fayez Ghufran. All Rights Reserved.
       </div>
     </footer>
   );
