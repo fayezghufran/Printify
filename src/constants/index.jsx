@@ -1,11 +1,3 @@
-import {
-  BotMessageSquare,
-  BatteryCharging,
-  Fingerprint,
-  ShieldHalf,
-  PlugZap,
-  GlobeLock,
-} from "lucide-react";
 
 import user1 from "../assets/profile-pictures/user1.jpg";
 import user2 from "../assets/profile-pictures/user2.jpg";
@@ -15,166 +7,134 @@ import user5 from "../assets/profile-pictures/user5.jpg";
 import user6 from "../assets/profile-pictures/user6.jpg";
 
 export const navItems = [
-  { label: "Features", href: "#" },
-  { label: "Workflow", href: "#" },
-  { label: "Pricing", href: "#" },
-  { label: "Testimonials", href: "#" },
+  { label: "Catalog", href: "#catalog" },
+  {
+    label: "How it works",
+    href: "#how it works",
+    dropdown: [
+      { label: "How Printify Works", href: "#how printify works" },
+      { label: "Print On Demand", href: "#print on demand" },
+      { label: "Printify Quality Promise", href: "#printify quality promise" },
+      { label: "What to Sell?", href: "#what to sell?" },
+    ],
+  },
+  { label: "Pricing", href: "#pricing" },
+  { label: "Blog", href: "#blog" },
+  {
+    label: "Services",
+    href: "#services",
+    dropdown: [
+      { label: "Printify Studio", href: "#printify studio" },
+      { label: "Printify Express Delivery", href: "#printify express delivery" },
+      { label: "Transfer Products", href: "#transfer products" },
+      { label: "Order In Bulk", href: "#order in bulk" },
+      { label: "Experts Program", href: "#experts program" },
+    ],
+  },
+  {
+    label: "Use Cases",
+    href: "#use cases",
+    dropdown: [
+      { label: "Merch for Fans", href: "#merch for fans" },
+      { label: "Merch for eCommerce", href: "#merch for eCommerce" },
+      { label: "Merch for Enterprises", href: "#merch for enterprises" },
+      { label: "Grow Your Store", href: "#grow your store" },
+    ],
+  },
+  {
+    label: "Need Help?",
+    href: "#need help?",
+    dropdown: [
+      { label: "Help Center", href: "#help center" },
+      { label: "Contacts", href: "#contacts" },
+      { label: "My Requests", href: "#my requests" },
+    ],
+  },
 ];
 
 export const testimonials = [
   {
-    user: "Alice Green",
-    company: "Tech Innovators",
-    image: user1,
-    text: "The service exceeded all our expectations. The team's expertise and dedication transformed our ideas into a stunning reality. Highly recommended for anyone seeking top-tier results.",
+    user: "Sophia Taylor",
+    company: "Fashion Enthusiast",
+    image: user1, 
+    text: "The quality of the clothing is exceptional! I've never felt so confident in my outfits. Highly recommend this brand for anyone looking to elevate their style.",
+    rating: 5,
   },
   {
-    user: "Bob White",
-    company: "FutureTech Solutions",
-    image: user2,
-    text: "Exceptional service with a focus on client needs. The team's dedication and innovative solutions were instrumental in achieving our goals. We are extremely satisfied with their work.",
+    user: "Liam Johnson",
+    company: "Style Influencer",
+    image: user2, 
+    text: "Every piece I’ve worn has received compliments! The attention to detail and trendy designs are unmatched. This brand is a must-have in every wardrobe.",
+    rating: 4,
   },
   {
-    user: "Carol Black",
-    company: "NextGen Ventures",
-    image: user3,
-    text: "A remarkable team that delivered exceptional results. Their commitment to quality and client satisfaction is evident. We are thrilled with the outcome and look forward to future projects.",
+    user: "Mia Rodriguez",
+    company: "Fashion Blogger",
+    image: user3, 
+    text: "I love how unique and stylish the pieces are! They fit perfectly and are made from high-quality materials. I can’t wait to wear them for my next photoshoot!",
+    rating: 5,
   },
   {
-    user: "Dan Blue",
-    company: "Creative Horizons",
-    image: user4,
-    text: "This team’s creativity and problem-solving skills were game-changers for our project. They provided invaluable insights and delivered results that far surpassed our expectations.",
+    user: "Noah Smith",
+    company: "Clothing Retailer",
+    image: user4, 
+    text: "As a retailer, I appreciate the craftsmanship and creativity of this brand. The designs stand out in the market, and customers love the collections!",
+    rating: 5,
   },
   {
-    user: "Eva Grey",
-    company: "Digital Dynamics",
-    image: user5,
-    text: "Working with this team was an incredible experience. Their innovative approach and attention to detail made our project a huge success. Their professionalism is unmatched.",
-  },
-  {
-    user: "Frank Yellow",
-    company: "Tech Pioneers",
-    image: user6,
-    text: "Outstanding performance and professionalism. The team went above and beyond to deliver results that exceeded our expectations. We highly recommend their services for any project.",
+    user: "Oliver Brown",
+    company: "Fashion Stylist",
+    image: user6, 
+    text: "Working with this brand has been a game-changer! Their innovative styles and commitment to quality make my job easier. I love styling their collections!",
+    rating: 4,
   },
 ];
 
-export const features = [
-  {
-    icon: <BotMessageSquare />,
-    text: "Drag-and-Drop Interface",
-    description:
-      "Easily design and arrange your VR environments with a user-friendly drag-and-drop interface.",
-  },
-  {
-    icon: <Fingerprint />,
-    text: "Multi-Platform Compatibility",
-    description:
-      "Build VR applications that run seamlessly across multiple platforms, including mobile, desktop, and VR headsets.",
-  },
-  {
-    icon: <ShieldHalf />,
-    text: "Built-in Templates",
-    description:
-      "Jumpstart your VR projects with a variety of built-in templates for different types of applications and environments.",
-  },
-  {
-    icon: <BatteryCharging />,
-    text: "Real-Time Preview",
-    description:
-      "Preview your VR application in real-time as you make changes, allowing for quick iterations and adjustments.",
-  },
-  {
-    icon: <PlugZap />,
-    text: "Collaboration Tools",
-    description:
-      "Work together with your team in real-time on VR projects, enabling seamless collaboration and idea sharing.",
-  },
-  {
-    icon: <GlobeLock />,
-    text: "Analytics Dashboard",
-    description:
-      "Gain valuable insights into user interactions and behavior within your VR applications with an integrated analytics dashboard.",
-  },
-];
 
 export const checklistItems = [
   {
-    title: "Code merge made easy",
+    title: "Quality Materials",
     description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+      "We source the finest fabrics to ensure comfort and durability.",
   },
   {
-    title: "Review code without worry",
+    title: "Latest Trends",
     description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+      "Stay ahead with the latest fashion trends in every collection.",
   },
   {
-    title: "AI Assistance to reduce time",
+    title: "Sustainable Practices",
     description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+      "Our production methods prioritize sustainability and eco-friendliness.",
   },
   {
-    title: "Share work in minutes",
-    description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+    title: "Unique Designs",
+    description: "Every piece is crafted with unique designs that stand out.",
   },
 ];
 
-export const pricingOptions = [
-  {
-    title: "Free",
-    price: "$0",
-    features: [
-      "Private board sharing",
-      "5 Gb Storage",
-      "Web Analytics",
-      "Private Mode",
-    ],
-  },
-  {
-    title: "Pro",
-    price: "$10",
-    features: [
-      "Private board sharing",
-      "10 Gb Storage",
-      "Web Analytics (Advance)",
-      "Private Mode",
-    ],
-  },
-  {
-    title: "Enterprise",
-    price: "$200",
-    features: [
-      "Private board sharing",
-      "Unlimited Storage",
-      "High Performance Network",
-      "Private Mode",
-    ],
-  },
+
+
+export const companyLinks = [
+  { href: "#", text: "About Us" },
+  { href: "#", text: "Careers" },
+  { href: "#", text: "Press" },
+  { href: "#", text: "Blog" },
+  { href: "#", text: "Contact" },
 ];
 
-export const resourcesLinks = [
-  { href: "#", text: "Getting Started" },
-  { href: "#", text: "Documentation" },
-  { href: "#", text: "Tutorials" },
-  { href: "#", text: "API Reference" },
-  { href: "#", text: "Community Forums" },
-];
-
-export const platformLinks = [
+export const productLinks = [
+  { href: "#", text: "Pricing" },
   { href: "#", text: "Features" },
-  { href: "#", text: "Supported Devices" },
-  { href: "#", text: "System Requirements" },
-  { href: "#", text: "Downloads" },
-  { href: "#", text: "Release Notes" },
+  { href: "#", text: "Integrations" },
+  { href: "#", text: "Marketplace" },
+  { href: "#", text: "Partners" },
 ];
 
-export const communityLinks = [
-  { href: "#", text: "Events" },
-  { href: "#", text: "Meetups" },
-  { href: "#", text: "Conferences" },
-  { href: "#", text: "Hackathons" },
-  { href: "#", text: "Jobs" },
+export const supportLinks = [
+  { href: "#", text: "Help Center" },
+  { href: "#", text: "FAQ" },
+  { href: "#", text: "Status" },
+  { href: "#", text: "Privacy Policy" },
+  { href: "#", text: "Terms of Service" },
 ];
