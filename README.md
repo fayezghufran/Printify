@@ -32,7 +32,7 @@ Follow these instructions to set up the project locally:
 
 2. Navigate to the project directory:
    ```bash
-   cd amrutam
+   cd printify
 
 3. Install dependencies:
    ```bash
